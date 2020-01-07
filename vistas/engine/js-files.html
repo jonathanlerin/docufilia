@@ -1,0 +1,42 @@
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/global.php");?>
+
+<!--Jquery-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!--Boostrap JS-->
+	<script src="<?php httpURL();?>js/bootstrap.min.js"></script>
+	<!--Trasiciones js-->
+	<script src="<?php httpURL();?>js/transition.min.js"></script>
+	<!--Equalizer js-->
+	<!--<script src="js/Equalizer.js"></script>-->
+	<!--Fon awesome-->
+	<script src="<?php httpURL();?>plugin/fontAwesome/js/all.min.js"></script>
+	<!--My JS-->
+	<script src="<?php httpURL();?>js/my.js"></script>
+	 <!--Autosize textarea effect-->
+   <script src="<?php httpURL();?>js/jquery.textarea_autosize.js"></script>
+   
+	<script>
+	
+
+	$(function () {
+
+	    $('form').on('submit', function (e) {
+
+	      e.preventDefault();
+
+	      $.ajax({
+	        type: 'post',
+	        url: 'send.php',
+	        data: $('form').serialize(),
+	        success: function () {
+	          alert('¡Mensaje enviado con éxito!');
+	        }
+	      });
+
+	    });
+
+	  });
+
+	$('textarea.js-auto-size').textareaAutoSize();
+
+	</script>
