@@ -1,5 +1,7 @@
 <?php
 
+include_once($_SERVER['DOCUMENT_ROOT']."/personaliza_docufilia.php");
+
 $mail=$_POST["mail"];
 $mensaje =$_POST["mensaje-formulario"];
 
@@ -11,7 +13,7 @@ $mensaje_html='<html>
 </head>
 
 <body >
-	<center><img src="https://ifelse.es/0/img/logo.png" width="200px"></center>
+	<center><img src="'.$url_tu_logo.'" width="200px"></center>
 	<br/>
 	<hr/>
 	<center><h3>Peticiones Usuarios</h3></center>
@@ -50,13 +52,13 @@ $mensaje_html='<html>
 
 
 //Titulo
-$titulo = "Peticion usuarios web ifelse";
+$titulo = "Formulario Web";
 //cabecera
 $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-$cabeceras .= "From: web@ifelse.es> \r\n";
+$cabeceras .= "From: docufilia@lamejor.documentacion> \r\n";
 //$cabeceras .= "Bcc: <$copia> \r\n"; //Enviar una copia a CCO
-$cabeceras .= "Reply-To: ifelsecontacto@gmail.com;"; 
+$cabeceras .= "Reply-To: ".$tu_email.";"; 
 //Enviamos el mensaje a tu_dirección_email 
 $bool = mail("j.lerin@hotmail.com",$titulo,$mensaje_html,$cabeceras);
 ?>

@@ -49,9 +49,9 @@
 				<div class="container">
 					  <div class="row justify-content-center">
 						<div class="col">
-							<h2>¿Qué es IFELSE?</h2>
+							<h2>DOCUFILIA</h2>
 							
-							<a href="<?php httpVistas();?>conoceme.html" class="btn btn-primary" role="button">¡Conóceme!</a>
+							<a href="<?php httpVistas();?>conoceme.html" class="btn btn-primary" role="button">¡Comenzar!</a>
 						</div>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 	<!--Servicios-->
 	<div class="servicios">
 		<div class="container">
-			
+
 		</div>
 		 	
 	</div>

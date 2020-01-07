@@ -1,4 +1,5 @@
 <?php
+
 function httpURL(){
 	if(empty($_SERVER['HTTPS'])){
 		echo "http://".$_SERVER['HTTP_HOST'].'/';	
@@ -39,6 +40,7 @@ function engineDIR(){
 	return $_SERVER['DOCUMENT_ROOT'].'/vistas/engine/';
 }
 
+//¿Se utiliza?
 function indexDIR(){
 	return $_SERVER['DOCUMENT_ROOT'].'/vistas/index/';
 }

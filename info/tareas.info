@@ -1,9 +1,39 @@
 TAREAS
 --------------------------------------
 
-_> Limpiar contenido
+_> Mejorar la plantilla mail mailto()
 
-_> Facilitar mailto()
-    * Mejorar la plantilla web
-    * Campos accesibles sin introducir código
+_> Accesibilidad index:
+    *Todas als documentaciones
+    *Ayuda
+    *Documentacion WebApp Docufilia
+        |
+        +-Siempre accesible.
 
+_> Renombrar send.php por enviar_email.php
+
+
+IDEAS
+------------------------------------------
+<_
+    Alojar send.php en un server externo de modo
+    que se puedan enviar correos aunque la WebApp
+    este desplegada en local.
+    
+    Y que recibe además como parámetros la dirección de correo
+    electrónica a la que se quiere que se envíen el mensaje 
+    de los formularios y la url de la imagen del logo que se 
+    introduce en la plantilla del email.
+
+_> Cambio de tecnología de núcleo
+
+    pasar todo de *.html a .php
+
+
+PREGUNTAS
+---------------------------------------------
+
+_> ¿Creo un router para los href?
+
+    href="<?php httpVistas();?>HTMLdoc/HTML-basico.html"
+    href="generarHREF('HTML-basico.html')"
